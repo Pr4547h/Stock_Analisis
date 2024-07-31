@@ -24,9 +24,9 @@ def plot_stock_data(stock_data, ticker):
 
 if __name__ == "__main__":
     # Define stock ticker, start date, and end date
-    ticker = 'AAPL'
-    start_date = '2022-01-01'
-    end_date = '2023-01-01'
+    ticker = str(input("Enter the ticker name : ")   #'AAPL'
+    start_date = input("Start Date : yyyy-mm-dd")  # '2022-01-01'
+    end_date = input("End Date : yyyy-mm-dd")  #'2023-01-01'
 
     # Fetch stock data
     stock_data = fetch_stock_data(ticker, start_date, end_date)
